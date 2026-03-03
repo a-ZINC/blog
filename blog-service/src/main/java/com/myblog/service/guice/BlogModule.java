@@ -9,15 +9,26 @@ import com.myblog.core.executor.article.SaveArticleExecutor;
 import com.myblog.core.executor.article.ValidateArticleExecutor;
 import com.myblog.core.processor.ActionProcessor;
 import com.myblog.core.processor.ActionType;
+import com.myblog.db.dao.ArticleDAO;
+import com.myblog.db.dao.SeriesDAO;
+import com.myblog.db.dao.UserDAO;
 import com.myblog.service.BlogConfiguration;
+import io.dropwizard.hibernate.HibernateBundle;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.SessionFactory;
 
 import java.util.List;
 import java.util.Map;
 
-@RequiredArgsConstructor
 public class BlogModule extends AbstractModule {
     private final BlogConfiguration configuration;
+    private final HibernateBundle<BlogConfiguration> hibernateBundle;
+
+    public BlogModule(BlogConfiguration configuration, HibernateBundle<BlogConfiguration> hibernateBundle) {
+        this.configuration = configuration;
+        this.hibernateBundle = hibernateBundle;
+
+    }
     @Override
     protected void configure() {
 
@@ -40,4 +51,30 @@ public class BlogModule extends AbstractModule {
     public ActionProcessor provideActionPRocessor(Map<ActionType, List<Executor>> executorMap) {
         return new ActionProcessor(executorMap);
     }
+
+    @Provides
+    @Singleton
+    public SessionFactory provideSessionFactory() {
+        return hibernateBundle.getSessionFactory();
+    }
+
+    @Provides
+    @Singleton
+    public ArticleDAO provideArticleDAO(SessionFactory sessionFactory) {
+        return new ArticleDAO(sessionFactory);
+    }
+
+    @Provides
+    @Singleton
+    public SeriesDAO provideSeriesDAO(SessionFactory sessionFactory) {
+        return new SeriesDAO(sessionFactory);
+    }
+
+    @Provides
+    @Singleton
+    public UserDAO provideUserDAO(SessionFactory sessionFactory) {
+        return new UserDAO(sessionFactory);
+    }
+
+
 }

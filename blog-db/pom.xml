@@ -20,8 +20,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yourblog</groupId>
-            <artifactId>blog-commons</artifactId>
+            <groupId>com.myblog</groupId>
+            <artifactId>blog-common</artifactId>
             <version>${project.version}</version>
         </dependency>
 
