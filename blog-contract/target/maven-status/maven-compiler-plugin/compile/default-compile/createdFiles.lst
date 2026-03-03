@@ -1,0 +1,9 @@
+com/myblog/contract/response/ErrorResponseDTO.class
+com/myblog/contract/response/ErrorResponseDTO$ErrorResponseDTOBuilder.class
+com/myblog/contract/response/SeriesResponseDTO.class
+com/myblog/contract/request/CreateArticleRequestDTO.class
+com/myblog/contract/request/CreateCommentRequestDTO.class
+com/myblog/contract/response/SeriesResponseDTO$SeriesResponseDTOBuilder.class
+com/myblog/contract/response/ArticleResponseDTO$ArticleResponseDTOBuilder.class
+com/myblog/contract/request/CreateSeriesDTO.class
+com/myblog/contract/response/ArticleResponseDTO.class

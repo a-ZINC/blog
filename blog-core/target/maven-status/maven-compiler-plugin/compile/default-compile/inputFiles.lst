@@ -1,0 +1,10 @@
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/executor/article/NotifyAnalyticsExecutor.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/bo/SeriesBO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/executor/Executor.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/bo/ArticleBO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/processor/ActionType.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/context/ActionContext.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/bo/UserBO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/executor/article/SaveArticleExecutor.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/processor/ActionProcessor.java
+/home/ajinkya/Desktop/java/blog-platform/blog-core/src/main/java/com/myblog/core/executor/article/ValidateArticleExecutor.java

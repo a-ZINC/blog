@@ -1,0 +1,6 @@
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/request/CreateArticleRequestDTO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/response/SeriesResponseDTO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/response/ErrorResponseDTO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/response/ArticleResponseDTO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/request/CreateCommentRequestDTO.java
+/home/ajinkya/Desktop/java/blog-platform/blog-contract/src/main/java/com/myblog/contract/request/CreateSeriesDTO.java

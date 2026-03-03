@@ -1,0 +1,5 @@
+com/myblog/service/resource/HelloResource.class
+com/myblog/service/BlogApplication.class
+com/myblog/service/BlogConfiguration.class
+com/myblog/service/guice/BlogModule.class
+com/myblog/service/resource/ArticleResource.class
