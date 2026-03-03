@@ -6,9 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="blog-commons" />
+        <module name="blog-db" />
         <module name="blog-contract" />
+        <module name="blog-common" />
+        <module name="blog-core" />
+        <module name="blog-service" />
+        <module name="blog-commons" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blog-commons" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

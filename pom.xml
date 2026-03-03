@@ -8,8 +8,11 @@
     <packaging>pom</packaging>   <!-- pom = this is a parent, not a jar -->
 
     <modules>
-        <module>blog-commons</module>
+        <module>blog-common</module>
         <module>blog-contract</module>
+        <module>blog-service</module>
+        <module>blog-core</module>
+        <module>blog-db</module>
     </modules>
 
     <properties>
@@ -30,6 +33,11 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-db</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
@@ -41,18 +49,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <version>6.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.19.2</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
